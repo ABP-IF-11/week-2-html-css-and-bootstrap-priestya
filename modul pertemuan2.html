@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praktikum MODUL 3 HTML - Lengkap</title>
+
+<!-- BOOTSTRAP (MODUL 5) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS (MODUL 4) -->
+<style>
+
+body{
+    background-color:#f2f2f2;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:20px;
+}
+
+/* Heading */
+h1{
+    color:#2F3CDF;
+}
+
+/* Styling tabel */
+table{
+    background:white;
+}
+
+/* Styling gambar */
+img{
+    border-radius:10px;
+}
+
+/* Styling form */
+form{
+    background:#ffffff;
+    padding:20px;
+    border-radius:10px;
+}
+
+</style>
+
+</head>
+<body class="container">
+
+<!-- Identitas -->
+<h2 class="text-primary">Nama: PRIESTY AMEILIANA MAULIDAH</h2>
+<h2 class="text-primary">NIM: 2311102175</h2>
+<hr>
+
+<!-- Heading -->
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<hr>
+
+<!-- Hyperlink -->
+<h3>Hyperlink</h3>
+<p>
+Klik link berikut untuk membuka halaman belajar HTML:
+<a href="https://www.codecademy.com" target="_blank" class="btn btn-primary">
+Belajar HTML di Codecademy
+</a>
+</p>
+<hr>
+
+<!-- Gambar -->
+<h3>Gambar</h3>
+<img src="https://via.placeholder.com/300x200" class="img-fluid" width="300">
+<p>Gambar ilustrasi praktikum HTML.</p>
+<hr>
+
+<!-- Audio -->
+<h3>Audio</h3>
+<audio controls class="w-100">
+<source src="audio-praktikum.mp3" type="audio/mpeg">
+Browser Anda tidak mendukung audio.
+</audio>
+<p>Audio ilustrasi praktikum HTML.</p>
+<hr>
+
+<!-- Video -->
+<h3>Video</h3>
+<video width="400" controls class="img-fluid">
+<source src="video-praktikum.mp4" type="video/mp4">
+Browser Anda tidak mendukung video.
+</video>
+<p>Video ilustrasi praktikum HTML.</p>
+<hr>
+
+<!-- Tabel -->
+<h3>Tabel Data Mahasiswa</h3>
+
+<table class="table table-bordered table-striped">
+
+<tr>
+<th rowspan="2">Nama Lengkap</th>
+<th colspan="2">Gelar Pendidikan</th>
+<th rowspan="2">Umur</th>
+</tr>
+
+<tr>
+<th>Sarjana</th>
+<th>Magister</th>
+</tr>
+
+<tr>
+<td>Alya</td>
+<td>S.Kom</td>
+<td>M.Sc</td>
+<td>22</td>
+</tr>
+
+<tr>
+<td>Dimas</td>
+<td>S.SiKom</td>
+<td>M.T</td>
+<td>24</td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- Formulir -->
+<h3>Formulir Pendaftaran Peserta</h3>
+
+<form action="#" method="POST">
+
+<div class="mb-3">
+<label class="form-label"><b>Nama:</b></label>
+<input type="text" class="form-control" value="PRIESTY AMEILIANA MAULIDAH" readonly>
+</div>
+
+<div class="mb-3">
+<label class="form-label"><b>Username:</b></label>
+<input type="text" class="form-control" value="praktikum_html" disabled>
+</div>
+
+<div class="mb-3">
+<label class="form-label"><b>Password:</b></label>
+<input type="password" class="form-control" placeholder="Masukkan Password">
+</div>
+
+<div class="mb-3">
+<label class="form-label"><b>Email:</b></label>
+<input type="email" class="form-control" placeholder="Masukkan Email">
+</div>
+
+<div class="mb-3">
+<label><b>Jenis Kelamin:</b></label><br>
+<input type="radio" name="jk"> Laki-laki
+<input type="radio" name="jk"> Perempuan
+</div>
+
+<div class="mb-3">
+<label><b>Hobi:</b></label><br>
+<input type="checkbox"> Menulis<br>
+<input type="checkbox"> Musik<br>
+<input type="checkbox"> Olahraga
+</div>
+
+<div class="mb-3">
+<label><b>Jenjang Pendidikan:</b></label>
+<select class="form-select">
+<option>--Pilih--</option>
+<option>SMA</option>
+<option>S1</option>
+<option>S2</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label><b>Kritik & Saran:</b></label>
+<textarea class="form-control" rows="4"></textarea>
+</div>
+
+<button type="reset" class="btn btn-danger">Batal</button>
+<button type="submit" class="btn btn-success">Kirim</button>
+
+</form>
+
+</body>
+</html>
