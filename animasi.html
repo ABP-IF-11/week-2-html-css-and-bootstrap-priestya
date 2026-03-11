@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Animasi jQuery</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+$("button").click(function(){
+
+$("div").animate({
+height:'toggle'
+});
+
+});
+
+});
+</script>
+
+</head>
+
+<body>
+
+<h2>Contoh Animasi jQuery</h2>
+
+<p>Klik tombol untuk menjalankan animasi</p>
+
+<button>Start Animation</button>
+
+<div style="background:green;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
