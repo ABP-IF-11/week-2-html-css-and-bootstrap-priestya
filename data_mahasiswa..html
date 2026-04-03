@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Mahasiswa AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<h2>Data Mahasiswa (AJAX)</h2>
+<button id="loadData">Tampilkan Data</button>
+
+<ul id="hasil"></ul>
+
+<script>
+$(document).ready(function() {
+    $("#loadData").click(function() {
+        $.ajax({
+            url: "data_mahasiswa.json",
+            type: "GET",
+            dataType: "json",
+
+            success: function(data) {
+                let output = "";
+                data.forEach(function(mhs) {
+                    output += "<li>Nama: " + mhs.nama + 
+                              " | NIM: " + mhs.nim + 
+                              " | Kelas: " + mhs.kelas + "</li>";
+                });
+                $("#hasil").html(output);
+            },
+
+            error: function() {
+                $("#hasil").html("Gagal mengambil data");
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
